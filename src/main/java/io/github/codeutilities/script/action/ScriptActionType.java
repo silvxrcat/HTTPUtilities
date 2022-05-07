@@ -324,9 +324,9 @@ public enum ScriptActionType {
                 ));
                 String ln;
                 while ((ln = read.readLine()) != null) {
-                    data.append(ln+"\n")
+                    data.append(ln+"\n");
                 }
-                read.close()
+                read.close();
             }
             catch(Exception err)
             {
