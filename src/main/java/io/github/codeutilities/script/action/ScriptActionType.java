@@ -327,6 +327,10 @@ public enum ScriptActionType {
                     data.append(ln+"\n");
                 }
                 read.close();
+                ctx.context().setVariable(
+                        ctx.variable("Data Received").name(),
+                        new ScriptTextValue(data.toString())
+                );
             }
             catch(Exception err)
             {
